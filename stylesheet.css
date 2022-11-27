@@ -1,22 +1,25 @@
 body{
     height:100vh;
     background: rgb(222, 222, 222);
+    margin: 0px;
 }
 
 .logo_image{
-    width: 10vw;
+    width: 2rem;
     margin: 20px;
 }
 
 .logo{
-    display: flex;
+    display: flex;  
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     background: white;
-    font-size: 3rem;
-    color:red;
+  
+  
 }
 .logo_text{
-
+  color:red;
+    font-size:2rem;
+    
 }
