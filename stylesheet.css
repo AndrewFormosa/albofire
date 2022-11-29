@@ -40,3 +40,8 @@ body{
     max-height: 50vh;
     object-fit:cover;
 }
+
+.card:hover{
+background:var(--alboRed);
+color:white;
+}
