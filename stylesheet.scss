@@ -1,12 +1,23 @@
+
+:root {
+    --alboRed: hsl(0, 100%, 43%);
+
+  }
+  
+
+
+
 body{
  
     height:100vh;
-    background: rgb(222, 222, 222);
+    background: white;
     margin: 0px;
 }
 
 .logo_image{
-    width: 2rem;
+    border:solid 1px green;
+
+    width: 3rem;
     margin: 20px;
 }
 
@@ -15,12 +26,15 @@ body{
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    background: white;
+    background:white;
   
  
 }
 .logo_text{
-  color:red;
+    display: inline-flex;
+    vertical-align: middle;
+    border:solid 1px green;
+  color:var(--alboRed);
     font-size:2rem;
     
 }
