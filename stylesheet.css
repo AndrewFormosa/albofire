@@ -64,6 +64,15 @@ align-items: center;
     object-fit:cover;
 }
 
+.introduction{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: solid green 1px;
+    display: block;
+    text-align: center;
+}
+
+
 .card{
     max-width: 500px;
     min-width:250px
