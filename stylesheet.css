@@ -9,26 +9,9 @@
     width: 2rem;
 }
 
-  @media only screen and (max-width: 600px) {
-
-    .logo_text{
-    font-size: 1rem;
+.logo_text{
+    font-size: 2rem;
     }
-    .logo_image{
-        width:1rem;
-    }
-
-  }
-
-  @media only screen and (max-width: 400px) {
-    .tel_text {
-      display: none;
-    }
-
-  }
-
-
-
 
 
 body{
@@ -41,20 +24,43 @@ body{
 
 .logo{
     display: inline-flex;  
-    align-items: center;
+    align-items:flex-start;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     background:white;
   
  
 }
+
+
 .logo_text{
+    font-weight: bold;
     display: inline-flex;
-    vertical-align: middle;
+    vertical-align:middle;
   color:var(--alboRed);
    
     
 }
+
+@media only screen and (max-width: 860px) {
+
+    .logo_text{
+    font-size: 1.5rem;
+    }
+    .logo_image{
+        width:1.5rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 480px) {
+    .tel_text {
+      display: none;
+    }
+
+  }
+
+
 
 .test_image{
     border:solid 1px rgb(209, 209, 209);
@@ -63,6 +69,9 @@ body{
     max-height: 50vh;
     object-fit:cover;
 }
+
+
+
 
 .card:hover{
 background:var(--alboRed);
