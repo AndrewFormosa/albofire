@@ -38,6 +38,7 @@ align-items: center;
 @media only screen and (max-width: 880px) {
  .logo_image{
         width:1.5rem;
+        height:1.5rem;
     }
     .logo_text{
     font-size: 1.5rem;
@@ -63,7 +64,9 @@ align-items: center;
     object-fit:cover;
 }
 
-
+.card{
+    max-width: 300px;
+}
 
 
 .card:hover{
