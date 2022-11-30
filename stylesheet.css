@@ -64,18 +64,25 @@ align-items: center;
     object-fit:cover;
 }
 
-.introduction{
+.section_title{
     padding: 1rem;
     font-size: 1.5rem;
-    border: solid green 1px;
+    font-weight: bold;
+    color:rgb(98, 98, 98);
+    display: block;
+    text-align: center;
+}
+.section_text{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: grey;
     display: block;
     text-align: center;
 }
 
-
 .card{
-    max-width: 500px;
-    min-width:250px
+    max-width: 300px;
+    min-width:150px
 }
 
 
