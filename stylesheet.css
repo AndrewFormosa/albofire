@@ -65,7 +65,8 @@ align-items: center;
 }
 
 .card{
-    max-width: 300px;
+    max-width: 500px;
+    min-width:250px
 }
 
 
