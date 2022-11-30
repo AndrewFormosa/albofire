@@ -5,6 +5,32 @@
   }
 
 
+.logo_image{
+    width: 2rem;
+}
+
+  @media only screen and (max-width: 600px) {
+
+    .logo_text{
+    font-size: 1rem;
+    }
+    .logo_image{
+        width:1rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {
+    .tel_text {
+      display: none;
+    }
+
+  }
+
+
+
+
+
 body{
  
     height:100vh;
@@ -12,9 +38,6 @@ body{
     margin: 0px;
 }
 
-.logo_image{
-    width: 2rem;
-}
 
 .logo{
     display: inline-flex;  
