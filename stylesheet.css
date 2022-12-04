@@ -76,6 +76,8 @@ width:100%;
 
 .tel_text {
    margin-left: 20px; 
+   font-weight: bold;
+  
   }
 
 
@@ -88,13 +90,14 @@ width:100%;
     font-size: 1.5rem;
     }
     .tel_text{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
   }
 
   @media only screen and (max-width: 480px) {
     .tel_text {
       display: none;
+      font-size: 0.6rem;
     }
   }
 
