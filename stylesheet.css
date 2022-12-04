@@ -17,6 +17,7 @@ body{
 .navbar-brand{
 display: inline-flex;
 align-items: center;
+
 }
 
 .hover-text-container {
@@ -25,6 +26,7 @@ width:100%;
 }
 
 .image {
+  border: solid 2px rgb(196, 196, 196);
   opacity: 1;
   display: block;
   width: 100%;
@@ -78,6 +80,7 @@ width:100%;
 .tel_text {
    margin-left: 20px; 
    font-weight: bold;
+   
   
   }
 
@@ -105,7 +108,8 @@ width:100%;
 
 
 .test_image{
-    border:solid 1px rgb(209, 209, 209);
+    border:solid 1px rgb(87, 87, 87);
+    border-style:inset;
     margin:auto;
     width:100vw;
     max-height: 50vh;
