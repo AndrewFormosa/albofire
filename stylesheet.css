@@ -1,6 +1,6 @@
 
 :root {
-    --alboRed: hsl(0, 100%, 40%);
+    --alboRed: hsl(0, 99%, 40%);
 
   }
 
@@ -53,7 +53,7 @@ width:100%;
 }
 
 .text{
-  background-color: #a20202;
+  background-color: #a30000;
   border-radius: 10px;
   color: white;
   font-size: 16px;
@@ -69,7 +69,8 @@ width:100%;
 
 .logo_text{
     font-size: 2rem;
-    text-shadow: rgb(124, 124, 124) 1px 1px 2px;
+    text-shadow: rgb(34, 34, 34) 0px 0px 1px;
+    
     font-weight: bold;
     color:var(--alboRed);   
 }
