@@ -8,14 +8,58 @@
 body{
  
     height:100vh;
+    width:100vw;
     background: white;
-    margin: 0px;
+    margin:0px;
+
 }
 
 .navbar-brand{
 display: inline-flex;
 align-items: center;
 }
+
+.hover-text-container {
+ position: relative;
+width:100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hover-text-container:hover .image {
+  opacity: 0.5;
+}
+
+.hover-text-container:hover .middle {
+  opacity: 0.8;
+}
+
+.text{
+  background-color: #a20202;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 
 .logo_image{
     vertical-align: middle;
@@ -73,7 +117,9 @@ align-items: center;
     text-align: center;
 }
 .section_text{
-    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
     font-size: 1.2rem;
     color: grey;
     display: block;
@@ -82,7 +128,7 @@ align-items: center;
 
 .card{
     max-width: 300px;
-    min-width:150px
+    min-width:200px
 }
 
 
