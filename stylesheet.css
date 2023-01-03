@@ -1,7 +1,16 @@
 
-
 :root {
   --alboRed: hsl(0, 99%, 40%);
+
+  --text1:"Welcome to Albo Fire Protection";
+  --text2:"We are a fire extiguisher service company based in South Lanarkshire";
+  --text3:"With over 30 years exerience in servicing and maintaining fire extiguishers";
+  --text4:"All work carried out to BS5306 Part 3";
+  --text5:"All work is guaranteed for 1 year";
+  --text6:"We can quote for repair or replacements if required";
+  --text7:"Contact us at any time on 07944 122 766";
+  --text8:"Or email us at albofireprotection@gmail.com";
+  --text9:"We look forward to working with you...";
 
 }
 
@@ -13,87 +22,6 @@ body{
   background: white;
   margin:0px;
 
-}
-
-
-
-.my-card{
-transition: 1s ease;
-background: rgb(245, 245, 245);
-border-radius: 10px;
-}
-
-.nav-link:hover {
-color: red!important;
-transition: 1s ease;
-background: rgb(245, 245, 245);
-border-radius: 10px;
-
-}
-
-.navbar-brand{
-display: inline-flex;
-align-items: center;
-
-}
-
-.hover-text-container {
-position: relative;
-
-width:100%;
-}
-
-.cap{
-display: inline-block;
-margin: auto;
-width:100%;
-text-align: center;
-position:absolute;
-top:0%;
-
-
-
-
-}
-
-.image {
-margin: auto;
-border: solid 2px rgb(196, 196, 196);
-opacity: 1;
-display: block;
-width: 100%;
-max-width: 1000px;
-height: auto;
-transition: .5s ease;
-backface-visibility: hidden;
-}
-
-.middle {
-width:80%;
-transition: .5s ease;
-opacity: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-text-align: center;
-}
-
-.hover-text-container:hover .image {
-opacity: 0.5;
-}
-
-.hover-text-container:hover .middle {
-opacity: 0.8;
-}
-
-.text{
-background-color: #a30000;
-opacity: 0.5;
-color: white;
-font-size: 16px;
-padding: 16px 32px;
 }
 
 
@@ -114,8 +42,93 @@ padding: 16px 32px;
 .tel_text {
  margin-left: 20px; 
  font-weight: bold;
- 
 
+}
+
+
+.nav-link:hover {
+  color: red!important;
+  transition: 1s ease;
+  background: rgb(245, 245, 245);
+  border-radius: 10px;
+  
+  }
+  
+  .navbar-brand{
+  display: inline-flex;
+  align-items: center;
+  
+  }
+
+
+  .main_image_container{
+    position: relative;
+    }
+    
+    .main_image{
+    margin: auto;
+    border: solid 2px rgb(196, 196, 196);
+    opacity: 1;
+    display: block;
+    width:100%;
+    height: auto;
+    }
+    
+    .main_image_text{
+    font-size: 2.5rem;
+    position: absolute;
+    top:0;
+    height: 100%;
+    width:80%;
+    padding: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transform:translate(0px, -10%);
+    color:white;
+    }
+    
+.changing_text::before {
+  display: flex;
+  align-items: center;
+
+  content: "";
+  animation: animate infinite 40s;
+
+}
+
+  @keyframes animate {
+  
+5%{opacity: 0;content: "";}
+6%{opacity: 0;content: var(--text1);}
+10%{opacity: 1;content:var(--text1);}
+15%{opacity:0;content:var(--text1);}
+16%{opacity: 0;content: var(--text2);}
+20%{opacity: 1;content:var(--text2);}
+25%{opacity:0;content: var(--text2);}
+26%{opacity: 0;content:var(--text3)}
+30%{opacity: 1;content:var(--text3);}
+35%{opacity: 0;content:var(--text3);}
+36%{opacity: 0;content: var(--text4);}
+40%{opacity: 1;content:var(--text4);}
+45%{opacity: 0;content:var(--text4);}
+46%{opacity: 0;content: var(--text5);}
+50%{opacity: 1;content:var(--text5);}
+55%{opacity: 0;content: var(--text5);}
+56%{opacity: 0;content: var(--text6);}
+60%{opacity: 1;content:var(--text6);}
+65%{opacity: 0;content: var(--text6);}
+66%{opacity: 0;content: var(--text7);}
+70%{opacity: 1;content:var(--text7);}
+75%{opacity: 0;content: var(--text7);}
+76%{opacity: 0;content: var(--text8);}
+80%{opacity: 1;content:var(--text8);}
+85%{opacity: 0;content: var(--text8);}
+86%{opacity: 0;content: var(--text9);}
+90%{opacity: 1;content:var(--text9);}
+95%{opacity: 0;content: var(--text9);}
+96%{opacity: 0;content: "";}
+100%{opacity: 1;content:"";} 
 }
 
 
@@ -130,40 +143,31 @@ padding: 16px 32px;
   .tel_text{
       font-size: 0.6rem;
   }
+
+  .main_image_text{
+    font-size:1.5rem}
 }
 
 @media only screen and (max-width: 480px) {
   .tel_text {
     display: none;
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
-  .middle{
-    opacity: 1;
-
-  }
-  .middle>.text{
-    font-size: 0.9rem;
+  .main_image_text{
+    font-size: 1rem;
   }
 
 }
 
 
 
-.test_image{
-  border:solid 1px rgb(87, 87, 87);
-  border-style:inset;
-  margin:auto;
-  width:100vw;
-  max-height: 50vh;
-  object-fit:cover;
-}
 
 .section_title{
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color:rgb(98, 98, 98);
+  color:rgb(70, 70, 70);
   display: block;
   text-align: center;
 }
@@ -177,11 +181,17 @@ padding: 16px 32px;
   text-align: center;
 }
 
+.my-card{
+  transition: 1s ease;
+  background: rgb(245, 245, 245);
+  border-radius: 10px;
+  }
+
+
 .card{
   max-width: 300px;
   min-width:200px
 }
-
 
 .card:hover{
 background:var(--alboRed);
