@@ -95,9 +95,11 @@ body{
   content: "";
   animation: animate infinite 40s;
 
+
 }
 
   @keyframes animate {
+    
   
 5%{opacity: 0;content: "";}
 6%{opacity: 0;content: var(--text1);}
