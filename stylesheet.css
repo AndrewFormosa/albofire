@@ -1,17 +1,6 @@
 
 :root {
   --alboRed: hsl(0, 99%, 40%);
-
-  --text1:"Welcome to Albo Fire Protection";
-  --text2:"We are a fire extiguisher service company based in South Lanarkshire";
-  --text3:"With over 30 years exerience in servicing and maintaining fire extiguishers";
-  --text4:"All work carried out to BS5306 Part 3";
-  --text5:"All work is guaranteed for 1 year";
-  --text6:"We can quote for repair or replacements if required";
-  --text7:"Contact us at any time on 07944 122 766";
-  --text8:"Or email us at albofireprotection@gmail.com";
-  --text9:"We look forward to working with you...";
-
 }
 
 
@@ -63,6 +52,7 @@ body{
 
   .main_image_container{
     position: relative;
+  
     }
     
     .main_image{
@@ -72,67 +62,24 @@ body{
     display: block;
     width:100%;
     height: auto;
+    max-height: 100vh;
+   object-fit: cover;
     }
     
     .main_image_text{
-    font-size: 2.5rem;
-    position: absolute;
+      position: absolute; 
+    font-size: 2.5rem; 
     top:0;
     height: 100%;
-    width:80%;
-    padding: 20%;
-    display: flex;
-    align-items: center;
+    width:70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display:flex;
     text-align: center;
-    transform:translate(0px, -10%);
+    align-items: center;
     color:white;
     }
-    
-.changing_text::before {
-  display: flex;
-  align-items: center;
-
-  content: "";
-  animation: animate infinite 40s;
-
-
-}
-
-  @keyframes animate {
-    
-  
-5%{opacity: 0;content: "";}
-6%{opacity: 0;content: var(--text1);}
-10%{opacity: 1;content:var(--text1);}
-15%{opacity:0;content:var(--text1);}
-16%{opacity: 0;content: var(--text2);}
-20%{opacity: 1;content:var(--text2);}
-25%{opacity:0;content: var(--text2);}
-26%{opacity: 0;content:var(--text3)}
-30%{opacity: 1;content:var(--text3);}
-35%{opacity: 0;content:var(--text3);}
-36%{opacity: 0;content: var(--text4);}
-40%{opacity: 1;content:var(--text4);}
-45%{opacity: 0;content:var(--text4);}
-46%{opacity: 0;content: var(--text5);}
-50%{opacity: 1;content:var(--text5);}
-55%{opacity: 0;content: var(--text5);}
-56%{opacity: 0;content: var(--text6);}
-60%{opacity: 1;content:var(--text6);}
-65%{opacity: 0;content: var(--text6);}
-66%{opacity: 0;content: var(--text7);}
-70%{opacity: 1;content:var(--text7);}
-75%{opacity: 0;content: var(--text7);}
-76%{opacity: 0;content: var(--text8);}
-80%{opacity: 1;content:var(--text8);}
-85%{opacity: 0;content: var(--text8);}
-86%{opacity: 0;content: var(--text9);}
-90%{opacity: 1;content:var(--text9);}
-95%{opacity: 0;content: var(--text9);}
-96%{opacity: 0;content: "";}
-100%{opacity: 1;content:"";} 
-}
-
+ 
 
 @media only screen and (max-width: 880px) {
 .logo_image{
