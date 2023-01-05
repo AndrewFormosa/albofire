@@ -29,7 +29,9 @@ body{
 }
 
 .tel_text {
+  font-size: 1rem;
  margin-left: 20px; 
+ margin-top:12px;
  font-weight: bold;
 
 }
@@ -68,7 +70,7 @@ body{
     
     .main_image_text{
       position: absolute; 
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     top:0;
     height: 100%;
     width:70%;
@@ -134,10 +136,16 @@ body{
   transition: 1s ease;
   background: rgb(245, 245, 245);
   border-radius: 10px;
+  text-decoration: none;
   }
+
+.card-img-top{
+aspect-ratio: 2;
+}
 
 
 .card{
+  text-decoration: none;
   max-width: 300px;
   min-width:200px
 }
@@ -145,4 +153,24 @@ body{
 .card:hover{
 background:var(--alboRed);
 color:white;
+}
+
+a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+  color:black;
+}
+
+.footer{
+display: flex;
+align-items: center;
+justify-content: center;
+height:3rem;
+background: grey;
+margin-top: 50px;
+margin-bottom: 0px;
+
+}
+.footer_text{
+color:white;
+
 }
