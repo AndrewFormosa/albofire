@@ -74,10 +74,21 @@
     Albo Fire Protection are the West of Scotlands premier fire protection company
   </div>
 
+  <div class="site_section">
+    <div class="image_move_from_right">
+
+
+    </div>
+    <div class="text_move_from_left"></div>
+
+  </div>
+
+<span id="message"></span>
+
 
   <div class="row row-cols-1 row-cols-sm-2 mx-auto">
     <div class="col  col d-flex justify-content-center m-2">
-      <div class="card">
+      <div class="card box">
         <img src="fire_image.jpeg" class="card-img-top" alt="card-grid-image">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -123,6 +134,44 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script>
+
+
+
+  function detectScroll(scrollValue){
+    
+    const messageText = isInViewport(box) ?
+        'The box is visible in the viewport' :
+        'The box is not visible in the viewport';
+
+    message.textContent = messageText;
+console.log(messageText)
+    if(isInViewport(box)){
+      $('.box').css({"opacity":"1"});
+    }else{
+      $('.box').css({"opacity":"0","transition":"opacity 1s"});
+    }
+
+  }
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+    );
+}
+
+
+const box = document.querySelector('.box');
+const message = document.querySelector('#message');
+
+document.addEventListener('scroll', ()=>detectScroll(scrollY), {
+    passive: true
+});
+
 
  var messages = [
  "Welcome to Albo Fire Protection",
