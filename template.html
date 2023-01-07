@@ -20,9 +20,16 @@
 <body>
 
   <header-component></header-component>
-
-
+<image class="fixed-image" src="test_image1.png"></image>
+<div class="side-text">
+  <h4>Services And Pricing</h4>
+  <p>
+    Please contact us to discuss pricing and service agreements
+  </p>
+</div>
 <image class="slide-image" src="test_image1.png"></image>
+
+
 
 
 <footer-component></footer-component>
@@ -38,7 +45,8 @@
 
 $(document).ready(function(){
     
-    $(".slide-image").animate({left: '+40vw',opacity:'1'},1000, 'swing').fadeIn(2000);
+    $(".slide-image").animate({left: '+50vw',opacity:'1'},1000, 'swing').fadeIn(2000);
+    $(".side-text").hide().fadeIn(3000);
    
 
 });

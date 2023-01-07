@@ -13,6 +13,9 @@ body{
 
 }
 
+h4{
+  color: grey;
+}
 
 .logo_image{
   vertical-align: middle;
@@ -180,10 +183,62 @@ color:white;
 
 .slide-image{
   border-radius: 10px;
-
   display: block;
   position: relative;
   left:-50vw;
   width:40vw;
   opacity: 0;
 }
+
+.fixed-image{
+  display: none;
+
+}
+
+.side-text{
+  position:absolute;
+  left:2rem;
+  border:solid green 1px;
+  display:flex;
+  flex-direction: column;
+  width:40vw;
+  height:20vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+
+
+@media only screen and (max-width: 880px) {
+ .slide-image
+ {
+  display: none;
+  height: 0px;
+  width:0px;
+
+ }
+  .fixed-image
+  {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    left:-50vw;
+    width:90vw; 
+  }
+
+.side-text{
+  position: relative;
+  left:0px;
+  margin: auto;
+  margin-top:2rem;
+  text-align: center;
+  width:90vw;
+  height:auto;
+}
+
+}
+
+
