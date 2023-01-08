@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `
         <div class="footer">
         <div class="footer_text">
-          You can contact us at any time on 07742 640432 or email us at albofireprotection@gmail.com
+          Albo Fire Protection | Tel: 07598 376704 | email: albofireprotection@gmail.com | Website by AJF
         </div>
       </div>
         `;
