@@ -247,10 +247,10 @@ text-align: center;
   {
     display: flex;
     margin: auto;
-    margin-top: 2rem;
-    border-radius: 10px;
+    margin-top: 0;
+    border-radius: 0px;
     left:-50vw;
-    width:90vw; 
+    width:100vw; 
   }
 
 .side-text{
