@@ -8,7 +8,7 @@ class Header extends HTMLElement {
         <nav class="navbar navbar-expand-md navbar-light">
 
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <image class="logo_image" src="fire_image.jpeg"></image>
           <div class="logo_text">Albo Fire Protection</div>
         </a>

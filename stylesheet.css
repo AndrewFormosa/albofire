@@ -1,6 +1,7 @@
 
 :root {
   --alboRed: hsl(0, 99%, 40%);
+  --navbar-text:rgb(83, 83, 83);
 }
 
 
@@ -48,6 +49,7 @@ background: rgb(255, 255, 255);
 }
 
 .tel_text {
+  color:var(--navbar-text);
   font-size: 1rem;
  margin-left: 20px; 
  margin-top:17px;
@@ -55,7 +57,10 @@ background: rgb(255, 255, 255);
 
 }
 
-
+.nav-link {
+  color:var(--navbar-text)!important;
+  }
+  
 .nav-link:hover {
   color: red!important;
   transition: 1s ease;
@@ -174,19 +179,21 @@ border-radius: 10px;
   min-width:200px
 }
 
-.card:hover{
-background:var(--alboRed);
-color:white;
-}
-
 a:hover, a:visited, a:link, a:active{
   transition: 1s ease;
   text-decoration: none;
   color:rgb(34, 34, 34);
 }
+
+.card:hover{
+background:var(--alboRed);
+color:white;
+}
+
 .card:hover>.card-body>.card-text>a{
   color:white!important;
   }
+
 .footer{
 display: flex;
 align-items: center;
