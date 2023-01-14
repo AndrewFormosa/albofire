@@ -180,10 +180,13 @@ color:white;
 }
 
 a:hover, a:visited, a:link, a:active{
+  transition: 1s ease;
   text-decoration: none;
-  color:black;
+  color:rgb(34, 34, 34);
 }
-
+.card:hover>.card-body>.card-text>a{
+  color:white!important;
+  }
 .footer{
 display: flex;
 align-items: center;
